@@ -11,13 +11,10 @@ public class Main {
 
         Map<String, Integer> result = new HashMap<>();
         String page = new HtmlReader().read("http://google.com");
-        for (String word : page.split(" ") {
-            if (result.containsKey(word) {
+        for (String word : page.split(" "))
+            if (result.containsKey(word))
                 result.get(word + 1);
-            }else{
+            else
                 result.put(word, 1);
-            }
-        }
-
     }
 }
